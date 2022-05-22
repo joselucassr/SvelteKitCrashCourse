@@ -2,8 +2,8 @@
 	import type { LoadInput } from '@sveltejs/kit';
 
 	export async function load({ fetch }: LoadInput) {
-		const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-		const guides = await res.json();
+		const res = await fetch('/guides.json');
+		const { guides } = await res.json();
 
 		if (res.ok) {
 			return {
