@@ -1,8 +1,4 @@
-<script lang="ts">
-	import Title from '$lib/title.svelte';
-</script>
-
-<Title />
+<script lang="ts"></script>
 
 <div class="index">
 	<h2>Welcome to SvelteKit</h2>
